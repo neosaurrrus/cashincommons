@@ -1,3 +1,3 @@
 export enum ApiEndpoint {
-    GET_DONATIONS = 'api/donations'
+    GET_DONATIONS = '/api/donations'
 } 
