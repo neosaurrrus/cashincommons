@@ -2,16 +2,16 @@ import { ApiEndpoint } from '@/types'
 import {getData} from '@/utils/getData'
 
 
-
 export default async function Donations() {
-    const data = await getData(ApiEndpoint.GET_DONATIONS)
+    const donationsResponse = await getData(ApiEndpoint.GET_DONATIONS)
+    const {title, body}  = donationsResponse[0]
 
     return (
         <>
             <h1>Donations</h1>
-            {data.data[0].title}
-            {data.data[0].body}
-
+            {title}
+            {body}
         </>
     )
 }
+
