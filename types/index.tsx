@@ -1,3 +1,3 @@
 export enum ApiEndpoint {
-    GET_DONATIONS = 'https://jsonplaceholder.typicode.com/posts'
+    GET_DONATIONS = 'donations'
 } 
